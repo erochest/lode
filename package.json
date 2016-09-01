@@ -1,0 +1,14 @@
+{
+  "name": "lode",
+  "main": "./lib/lode",
+  "version": "0.0.0",
+  "description": "An atom package for editing MD+RDFa.",
+  "license": "Apache-2",
+  "private": true,
+  "repository": "https://github.com/erochest/lode",
+  "engines": {
+    "atom": ">0.61.0"
+  },
+  "dependencies": {
+  }
+}
