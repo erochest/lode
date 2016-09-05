@@ -12,7 +12,8 @@ To use the development version, clone it to a local directory and install it fro
 
 ```bash
 git clone git@github.com:erochest/lode.git
-apm develop lode ./lode
+cd lode/
+apm link
 ```
 
 You'll need to open a new Atom window or reload the current one (with the *Window: Reload* command). Any time you change or update the package, you'll also need to reload to see the changes.

@@ -19,15 +19,21 @@ describe "lode snippets", ->
       atom.workspace.open('sample.md')
 
     waitsForPromise ->
+      atom.packages.activatePackage("snippets")
+
+    waitsForPromise ->
       atom.packages.activatePackage("lode")
 
     runs ->
       editor = atom.workspace.getActiveTextEditor()
       editorElement = atom.views.getView(editor)
 
-  it "should expand 'label' to a span@label.", ->
+  afterEach ->
+    atom.packages.deactivatePackage('lode')
+
+  it "should expand 'slabel' to a span@label.", ->
     editor.setText("")
-    editor.insertText("label")
+    editor.insertText("slabel")
     simulateTabKeyEvent()
     expect(editor.lineTextForBufferRow(0)).toBe(
       "<span property=\"rdfs:label\"></span>"

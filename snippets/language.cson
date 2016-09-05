@@ -1,10 +1,6 @@
-# ".source.coffee .specs":
-#   "Expect":
-#     prefix: "ex"
-#     body: "expect($1).to$2"
-#   "Describe":
-#     prefix: "de"
-#     body: """
-#       describe "${1:description}", ->
-#         ${2:body}
-#     """
+
+'.source.gfm':
+  'span[@property="rdfs:label"]':
+    'prefix': 'slabel'
+    'body': '<span property="rdfs:label">$1</span>$2'
+    'description': 'A span wrapping a label.'
