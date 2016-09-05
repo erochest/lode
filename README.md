@@ -21,6 +21,16 @@ You'll need to open a new Atom window or reload the current one (with the *Windo
 
 _(Coming soon)_
 
+### Running tests
+
+To run tests from the command line, use this incantation:
+
+```bash
+atom --test spec/lode-spec.coffee
+```
+
+See The Flight Manual on [Writing Specs](http://flight-manual.atom.io/hacking-atom/sections/writing-specs/) for more information.
+
 ## Examples
 
 _(Coming soon)_
