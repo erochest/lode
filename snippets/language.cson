@@ -4,3 +4,7 @@
     'prefix': 'slabel'
     'body': '<span property="rdfs:label">$1</span>$2'
     'description': 'A span wrapping a label.'
+  'span[@property]':
+    'prefix': 'spanp'
+    'body': '<span property="$1">$2</span>$3'
+    'description': 'A snap with a property attribute.'
