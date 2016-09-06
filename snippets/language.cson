@@ -16,3 +16,31 @@
     'prefix': 'spanprt'
     'body': '<span property="$1" resource="$2" typeof="$3">$4</span>$5'
     'description': 'A span with property, resource, and typeof attributes.'
+  'span[@about,@property]':
+    'prefix': 'spanap'
+    'body': '<span about="$1" property="$2">$3</span>$4'
+    'description': 'A span with about and property attributes.'
+  'span[@about,@property,@typeof]':
+    'prefix': 'spanap'
+    'body': '<span about="$1" property="$2" typeof="$3">$4</span>$5'
+    'description': 'A span with about, property, typeof attributes.'
+  'span[@datatype,@property,@value]':
+    'prefix': 'spandpv'
+    'body': '<span datatype="$1" property="$2" value="$3">$4</span>$5'
+    'description': 'A span with datatype, property, value attributes.'
+  'a[@href]':
+    'prefix': 'ahref'
+    'body': '<a href="$1">$2</a>$3'
+    'description': 'A link tag. That\'s all.'
+  'a[@href,@typeof]':
+    'prefix': 'aht'
+    'body': '<a href="$1" typeof="$2">$3</a>$4'
+    'description': 'A link tag with a typeof attribute.'
+  'a[@href,@property,@typeof]':
+    'prefix': 'ahpt'
+    'body': '<a href="$1" property="$2" typeof="$3">$4</a>$5'
+    'description': 'A link tag with property and typeof attributes.'
+  'div[@property,@resource,@typeof]':
+    'prefix': 'divp'
+    'body': '<div resource="$1" property="$2" typeof="$3">$3</div>$4'
+    'description': 'A div tag with resource, property, and typeof attributes.'
