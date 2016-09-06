@@ -7,4 +7,12 @@
   'span[@property]':
     'prefix': 'spanp'
     'body': '<span property="$1">$2</span>$3'
-    'description': 'A snap with a property attribute.'
+    'description': 'A span with a property attribute.'
+  'span[@property,@resource]':
+    'prefix': 'spanpr'
+    'body': '<span property="$1" resource="$2">$3</span>$4'
+    'description': 'A span with property and resource attributes.'
+  'span[@property,@resource,@typeof]':
+    'prefix': 'spanprt'
+    'body': '<span property="$1" resource="$2" typeof="$3">$4</span>$5'
+    'description': 'A span with property, resource, and typeof attributes.'
